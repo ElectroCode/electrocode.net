@@ -1,0 +1,3 @@
+- name: cloudflare_cli
+  lang: Ruby
+  anchor: '#cloudflare_cli'

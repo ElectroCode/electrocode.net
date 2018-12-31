@@ -1,10 +1,12 @@
 ---
+layout: 'page'
+title: 'Gems'
 ---
-<div class="list-group">
+<div class="list-group bg-dark">
     {% for gem in site.data.gem_index %}
-        <div class="list-group-item">
+        <div class="list-group-item bg-dark">
             <h3>{{gem.name}}</h3>
-            <a href="{{ gem.href }}"
+            <a href="{{ gem.href }}">{{ gem.href | relative_url }}</a>
         </div>
     {% endfor %}
 </div>
