@@ -1,9 +1,7 @@
 _site/
-.sass-cache/
+/.sass-cache/
 vendor/
-vendor/bundle/
 Gemfile.lock
 .bundle
 .project
 /.idea/
-/.sass-cache/
