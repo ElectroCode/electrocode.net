@@ -1,0 +1,24 @@
+name: "ElectroCode"
+url: "https://electrocode.net"
+permalink: pretty
+sass_dir: _sass
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: shell
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+sass:
+    :style: compressed
+    :cache: false
+timezone: America/New_York
+exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore', 'Gemfile*', '*.gemspec', '_sass']
+

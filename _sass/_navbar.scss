@@ -1,0 +1,35 @@
+.navbar
+{
+  background-color: #1f232b;
+  color: #ffffff;
+}
+
+.navbar-brand
+{
+  color: #00ff2a;
+}
+
+.navbar-brand:hover
+{
+  color: #006108;
+}
+
+.navbar-link
+{
+  color: #ffffff;
+}
+
+.navbar-link:hover
+{
+  color: #2b90d9;
+}
+.dropdown-item {
+  color: #858585;
+  text-decoration: none;
+  background: #505050 linear-gradient(180deg, #505050, #000) repeat-x !important;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #858585;
+  text-decoration: none;
+  background: #0b2e13 linear-gradient(180deg, #0b2e13, #000) repeat-x !important;
+}

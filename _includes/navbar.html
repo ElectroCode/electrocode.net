@@ -1,0 +1,36 @@
+<header>
+<nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="{{site.url}}">{{site.name}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars fa-fw" data-fa-transform="grow-5 down-3"></i>
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link btn btn-dark" href="{{site.url}}"><i class="fas fa-home"></i><span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link btn btn-dark dropdown-toggle" id="websites-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Staff / Websites
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="websites-dropdown">
+                    {% for member in site.data.staff %}
+                        <li class="dropdown-header">{{member.name}}</li>
+                        <li class="dropdown-header">{{ member.aliases | join: ", " }}</li>
+                        {% if member.links != [] %}
+                            {% for link in member.links %}
+                                <a class="dropdown-item" href="{{link.href}}">{{link.name}}</a>
+                            {% endfor %}
+                        {% endif %}
+                        {% unless forloop.last %}
+                            <li class="dropdown-divider"></li>
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
