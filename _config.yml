@@ -2,6 +2,14 @@ name: "ElectroCode"
 url: "https://electrocode.net"
 permalink: pretty
 sass_dir: _sass
+page_gen:
+  - index_files: true
+    data: gems
+    template: gem_index
+    name: gem_name
+    extension: html
+    dir: projects/gems
+    dirs: true
 highlighter: rouge
 markdown: kramdown
 kramdown:

@@ -1,0 +1,19 @@
+---
+layout: page
+---
+<h1>{{page.gem_name}}</h1>
+
+<h2>Description</h2>
+<p>{{page.description}}</p>
+
+<h3>Needed Gems</h3>
+<div class="list-group">
+{% for gem in page.gem_requirements %}
+    <div class="bg-success"><span>{{ gem }}</span>
+        <a class="badge badge-dark" href="https://rubygems.org/gems/{{gem}}">
+            <i class="fas fa-external-link-alt fa-fw" style="color:#00ff2a;"></i>
+        </a>
+    </div>
+
+{% endfor %}
+</div>

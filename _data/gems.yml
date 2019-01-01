@@ -1,0 +1,44 @@
+- gem_name: "cloudflare_cli"
+  href: /gems/cloudflare_cli
+  related_gems:
+    - cloud_party
+  description: >
+    cloudflare_cli is a cli interface to Cloudflare.
+  gem_requirements:
+    - app_configuration
+    - awesome_print
+    - chronic
+    - cloud_party
+    - gli
+    - httparty
+    - paint
+    - recursive_open_struct
+    - rubyflare
+    - table_print
+    - terminal_table
+    - vine
+  is_mostly: executable
+- gem_name: "cloud_party"
+  href: /gems/cloud_party
+  related_gems:
+    - cloudflare_cli
+  description: >
+    cloud_party is a HTTParty based library interfacing with cloudflare.
+    Its name is based on Cloud(flare), (HTT)Party
+  gem_requirements:
+    - app_configuration
+    - httparty
+    - rubyflare
+    - vine
+  is_mostly: library
+- gem_name: "micro_editor"
+  href: /gems/micro_editor
+  description: >
+    micro_editor is a port and extension of the bash-curlable script from https://getmic.ro
+
+  gem_requirements:
+    - gli
+    - highline
+    - os
+    - paint
+    - unirest

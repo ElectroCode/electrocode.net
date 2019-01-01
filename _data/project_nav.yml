@@ -1,0 +1,9 @@
+- name: cloudflare_cli
+  type: Ruby Gem
+  page: '/projects/gems/cloudflare_cli'
+- name: cloud_party
+  type: Ruby Gem
+  page: '/projects/gems/cloud_party'
+- name: electrocode.net
+  type: Website
+  page:

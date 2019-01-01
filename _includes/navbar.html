@@ -35,10 +35,13 @@
                     Projects
                 </a>
                 <ul class="dropdown-menu bg-dark" aria-labelledby="projects-dropdown">
-                    {% for project in site.data.gem_nav %}
-                        <li class="dropdown-header">{{ project.name }} -- {{ project.lang }} </li>
-                        <a class="dropdown-item" href="/gems{{project.anchor}}">{{ project.anchor }}</a>
-
+                    {% for project in site.data.project_nav %}
+                        <li class="dropdown-header">{{ project.name }} —— {{ project.type }}</li>
+                        {% if project.page %}
+                            <a class="dropdown-item" href="{{project.page}}">{{ project.page }}</a>
+                        {% else %}
+                        <li class="">This website</li>>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </li>
