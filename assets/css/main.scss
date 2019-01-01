@@ -1,6 +1,107 @@
 ---
 ---
 @import "_basic.scss";
-@import "_content.scss";
-@import "_sidebar.scss";
 @import "_main.scss";
+
+@font-face {
+  font-family: 'Fira Code Light';
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Light.eot');
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Light.eot') format('embedded-opentype'),
+  url('/assets/fonts/Firacode/woff2/FiraCode-Light.woff2') format('woff2'),
+  url('/assets/fonts/Firacode/woff/FiraCode-Light.woff') format('woff'),
+  url('/assets/fonts/Firacode/ttf/FiraCode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code Regular';
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Regular.eot');
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+  url('/assets/fonts/Firacode/woff2/FiraCode-Regular.woff2') format('woff2'),
+  url('/assets/fonts/Firacode/woff/FiraCode-Regular.woff') format('woff'),
+  url('/assets/fonts/Firacode/ttf/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code Medium';
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Medium.eot');
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Medium.eot') format('embedded-opentype'),
+  url('/assets/fonts/Firacode/woff2/FiraCode-Medium.woff2') format('woff2'),
+  url('/assets/fonts/Firacode/woff/FiraCode-Medium.woff') format('woff'),
+  url('/assets/fonts/Firacode/ttf/FiraCode-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Code Bold';
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Bold.eot');
+  src: url('/assets/fonts/Firacode/eot/FiraCode-Bold.eot') format('embedded-opentype'),
+  url('/assets/fonts/Firacode/woff2/FiraCode-Bold.woff2') format('woff2'),
+  url('/assets/fonts/Firacode/woff/FiraCode-Bold.woff') format('woff'),
+  url('/assets/fonts/Firacode/ttf/FiraCode-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Fira Code Retina';
+  src: url('/assets/fonts/Firacode/ttf/FiraCode-Bold.ttf') format('truetype'),
+  url("/assets/fonts/Firacode/otf/FiraCode-Retina.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Code Retina', 'Fira Code Regular', Arial, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+div#sidebar
+{
+  background-color:$dark-light-grey;
+  color:$light;
+  margin-top: 10px;
+  padding-top: 0;
+  -webkit-box-shadow: 0px 4px 10px 1px $dark;
+  -moz-box-shadow: 0px 4px 10px 1px $dark;
+  box-shadow: 0px 4px 10px 1px $dark;
+  min-height: 55vh;
+  border-radius:10px;
+}
+
+div#content
+{
+  background-color:$dark-light-grey;
+  color:$light;
+  margin-top: 0;
+  padding-top: 0;
+  //width: 90%;
+  //margin-left: 5%;
+  //margin-right: ;
+  //padding-left: 2%;
+  //padding-right: 2%;
+  //padding-top: 2%;
+  //padding-bottom: 2%;
+  -webkit-box-shadow: 0px 4px 10px 1px $dark;
+  -moz-box-shadow: 0px 4px 10px 1px $dark;
+  box-shadow: 0px 4px 10px 1px $dark;
+  min-height: 55vh;
+  border-radius:10px;
+}
+
+body {
+  background-color: $dark-grey !important;
+}
+table.table {
+  margin-bottom: 0 !important;
+}
+.breadcrumb {
+  margin-bottom: 10px !important;
+}
+ol.breadcrumb {
+  margin-bottom: 10px !important;
+}
