@@ -34,16 +34,16 @@
                 <a class="nav-link btn btn-dark dropdown-toggle" id="projects-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Projects
                 </a>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="projects-dropdown">
+                <div class="dropdown-menu bg-dark" aria-labelledby="projects-dropdown">
                     {% for project in site.data.project_nav %}
-                        <li class="dropdown-header">{{ project.name }} —— {{ project.type }}</li>
+                        <div class="dropdown-header">{{ project.name }} — {{ project.type }}</div>
                         {% if project.page %}
                             <a class="dropdown-item" href="{{project.page}}">{{ project.page }}</a>
                         {% else %}
-                        <li class="">This website</li>>
+                        <div class="dropdown-header text-light">This website</div>
                         {% endif %}
                     {% endfor %}
-                </ul>
+                </div>
             </li>
         </ul>
     </div>
