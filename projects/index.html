@@ -3,3 +3,19 @@ layout: page
 title: 'Projects'
 breadcrumb: 'Projects'
 ---
+{% for project in site.data.projects %}
+<div class="card bg-dark">
+    <div class="card-header">
+        <h2>{{ project[0] }}</h2>
+    </div>
+    <div class="card-body">
+        <div class="list-group-flush list-group bg-dark">
+        {% for rb_proj in project[1] %}
+            <div class="list-group-item bg-dark">
+                Name: <strong>{{rb_proj.name}}</strong>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}

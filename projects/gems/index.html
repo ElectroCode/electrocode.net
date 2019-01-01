@@ -2,4 +2,42 @@
 layout: page
 breadcrumb: 'Gems'
 permalink: /projects/gems/index.html
+title: Gems
 ---
+<h2>{{ page.title }}</h2>
+<div class="card-columns">
+    {% for gem in site.data.gems %}
+        <div class="card bg-dark">
+            <div class="card-header">
+
+                <div id="gem-{{- gem.gem_name -}}" class="">
+                    {{gem.gem_name}}
+                </div>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Description</h4>
+                <p>{{ gem.description }}</p>
+                <a href="#requirements-{{gem.gem_name}}" data-toggle="collapse">
+                    <h4 class="card-title">Dependencies</h4>
+                </a>
+                <div id="requirements-{{gem.gem_name}}" class="collapse">
+                    <div class="list-group-flush bg-dark">
+                        {% for requirement in gem.gem_requirements %}
+                            <div id="req-{{- requirement.name -}}" class="list-group-item bg-dark">
+                                <span>{{ requirement.name }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer">
+                {% for link_obj in gem.links %}
+                    <a href="{{link_obj.href}}" class="card-link">
+                        {{link_obj.name}}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

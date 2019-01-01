@@ -1,0 +1,11 @@
+Ruby:
+  - name: cloudflare_cli
+    is_mostly: Executable
+    href: /projects/gems/cloudflare_cli
+  - name: cloud_party
+    is_mostly: Library
+    href: /projects/gems/cloud_party
+  - name: micro_editor
+    is_mostly: Executable
+    href: /projects/gems/micro_editor
+HTML:
