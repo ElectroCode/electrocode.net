@@ -1,0 +1,18 @@
+---
+title: Blog
+breadcrumb: Blog
+permalink: /blog/index.html
+layout: page
+---
+
+{% for blog_post in site.blog %}
+<div class="card bg-dark">
+    <div class="card-header bg-dark">
+        <h2>{{blog_post.title}}</h2>
+    </div>
+    <div class="card-body">
+        <div id="blog-index-post-{{ blog_post.date | date: '%s' }}"></div>
+        <a class="" href="{{blog_post.url}}">{{blog_post.url}}</a>
+    </div>
+</div>
+{% endfor %}

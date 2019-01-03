@@ -1,6 +1,11 @@
 <header>
 <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="{{site.url}}">{{site.name}}</a>
+    <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="{{site.url}}">
+            <img class="navbar-brand-logo" src="/assets/images/new_color_icon.png">
+        </a>
+        <a href="{{site.url}}" class="navbar-brand"><span>{{site.name}}</span></a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
             <i class="fas fa-bars fa-fw" data-fa-transform="grow-5 down-3"></i>
@@ -45,6 +50,7 @@
                     {% endfor %}
                 </div>
             </li>
+            <a class="nav-link btn btn-dark" id="blog-link" href="/blog">Blog</a>
         </ul>
     </div>
 </nav>

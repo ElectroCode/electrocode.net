@@ -30,3 +30,14 @@ sass:
 timezone: America/New_York
 exclude: ['README.md', 'LICENSE', 'vendor/', 'node_src', '*.map', '.gitignore', 'Gemfile*', '*.gemspec', '_sass', '.idea', '.sass-cache/']
 
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: blog_post
