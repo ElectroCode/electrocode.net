@@ -59,20 +59,20 @@ div#sidebar
 {
   background-color:$dark-light-grey;
   color:$light;
-  margin-top: 10px;
+  margin-top: 0.5em;
   padding-top: 0;
   -webkit-box-shadow: 0px 4px 10px 1px $dark;
   -moz-box-shadow: 0px 4px 10px 1px $dark;
   box-shadow: 0px 4px 10px 1px $dark;
   min-height: 55vh;
-  border-radius:10px;
+  border-radius:5px;
 }
 
 div#content
 {
   background-color:$dark-light-grey;
   color:$light;
-  margin-top: 0;
+  margin-top: 0.5em;
   padding-top: 0;
   //width: 90%;
   //margin-left: 5%;
@@ -85,11 +85,22 @@ div#content
   -moz-box-shadow: 0px 4px 10px 1px $dark;
   box-shadow: 0px 4px 10px 1px $dark;
   min-height: 55vh;
-  border-radius:10px;
+  border-radius:5px;
+}
+
+div#post-meta {
+
+  border-radius: 5px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  background: #0b2e13 linear-gradient(180deg, #2c2c2c, #000) repeat-x !important;
+
+}
+nav.bg-breadcrumb.breadcrumbs.breadcrumb {
+  background: #2c2c2c linear-gradient(180deg, #2c2c2c #000) repeat-x !important;
 }
 
 body {
-  background-color: $dark-grey !important;
+  background-color: #1b1b1b !important;
 }
 table.table {
   margin-bottom: 0 !important;
@@ -99,4 +110,8 @@ table.table {
 }
 ol.breadcrumb {
   margin-bottom: 10px !important;
+}
+
+hr.sidebar-divider {
+  border: 2.5px solid #2c2c2c
 }

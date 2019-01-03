@@ -1,3 +1,19 @@
 ---
 ---
 @import "_navbar.scss";
+@import "_bootstrap.scss";
+
+@include media-breakpoint-down(md) {
+
+    img.navbar-brand-logo {
+        height: 10vw;
+        width: 10vw;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    img.navbar-brand-logo {
+        height: 2vw;
+        width: 2vw;
+    }
+}
